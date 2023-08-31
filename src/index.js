@@ -4,10 +4,12 @@ import indexRoutes from "./routes/index.routes.js"
 
 const app = express()
 
+app.use(express.json())
+
 app.use(indexRoutes)
 app.use(employeesRoutes)
 
 
 app.listen(3000)
 
-console.log("servidor en puerto 3000");
+console.log("servidor en puerto http://localhost:3000");
